@@ -1,0 +1,10 @@
+services:
+  ptcg-vision:
+    build: .
+    container_name: ptcg-vision
+    ports:
+      - "8765:8765"
+    volumes:
+      # 註冊的卡片存在這裡，重 build 容器也不會不見
+      - ./db:/app/db
+    restart: unless-stopped
