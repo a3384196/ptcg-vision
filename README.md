@@ -4,7 +4,7 @@
 
 
 
-\### 🔧 技術亮點
+### 🔧 技術亮點
 
 \- \*\*瀏覽器當感測器、Docker 當運算\*\*:瀏覽器以 getUserMedia 取相機影像,經 WebSocket 傳入容器運算、回傳遊戲狀態(解決 Windows Docker 取不到 USB 相機的問題)。
 
