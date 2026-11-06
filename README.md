@@ -1,12 +1,12 @@
 # PTCG Vision — 用真實的寶可夢卡跟電腦對戰
 
- \*\*Tech Stack:\*\* Python 3.12 · OpenCV · WebSocket · 原生 HTML/CSS/JS · Docker · Playwright
+ \\Tech Stack:\*\* Python 3.12 · OpenCV · WebSocket · 原生 HTML/CSS/JS · Docker · Playwright
 
 
 
 ### 🔧 技術亮點
 
-- \*\*瀏覽器當感測器、Docker 當運算\*\*:瀏覽器以 getUserMedia 取相機影像,經 WebSocket 傳入容器運算、回傳遊戲狀態(解決 Windows Docker 取不到 USB 相機的問題)。
+- \\瀏覽器當感測器、Docker 當運算\*\*:瀏覽器以 getUserMedia 取相機影像,經 WebSocket 傳入容器運算、回傳遊戲狀態(解決 Windows Docker 取不到 USB 相機的問題)。
 
 - \*\*卡片辨識(OpenCV)\*\*:輪廓偵測 + 透視校正,圖案卡以 ORB + FLANN + RANSAC 特徵比對;設計「剔除共同版型特徵 / 幾何合理性 / 明顯勝出」三道防誤判機制 → 單張畫面 \*\*93.5% 正確、0 誤判\*\*。
 
